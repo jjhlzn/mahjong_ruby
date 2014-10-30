@@ -8,7 +8,7 @@ describe MahjongMachine do
   subject { machine }
   its(:status) { should == MACHINE_STATUS_READY }
   describe 'should start correctly' do
-   
+
     before { machine.start }
     its(:cards_left) { should == 136 }
     its(:status) { should == MACHINE_STATUS_RUNNING }
