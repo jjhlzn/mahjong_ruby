@@ -31,10 +31,10 @@ class Game
   end
 
   def inspect
-    @players.inspect + "\n" + @mahjong_machine.cards.inspect
+    @players.inspect + "\n" + @mahjong_machine.all_cards.inspect
   end
 end
 
 game = Game.new
-puts "cards.count = #{game.mahjong_machine.cards.size}"
+puts "cards.count = #{game.mahjong_machine.all_cards.size}"
 puts game.inspect
